@@ -451,6 +451,10 @@ hr {
   padding: 0;
 }
 
+.hamburger{
+  display: none;
+}
+
 /* Media queries for responsiveness */
 
 @media screen and (max-width: 1200px) {
@@ -495,6 +499,10 @@ hr {
   footer,
   .hot-deals {
     margin-inline: -1rem;
+  }
+
+  .hamburger{
+    display: none;
   }
 
 
@@ -606,6 +614,28 @@ hr {
     display: flex;
     flex-direction: column;
   }
+
+
+  /* ************** */
+  nav {
+    padding: 1rem;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-item {
+    padding: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -678,4 +708,8 @@ hr {
   .product-section {
     padding-top: 0;
   }
+}
+
+.menu-open .nav-items {
+  display: flex;
 }
